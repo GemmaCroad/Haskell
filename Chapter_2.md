@@ -76,11 +76,11 @@
 
 Example
 
-	```triple 2
+	triple 2
 	(triple x = x * 3) 2
 	(triple 2 = 2 * 3)
 	2 * 3
-	6```
+	6
 
 #### Conventions for variables
 
@@ -96,7 +96,7 @@ Example
 
 Examples
 
-	```Prelude> 100 + 100
+	Prelude> 100 + 100
 	200
 
 	Prelude> 768395 * 21356345
@@ -109,7 +109,7 @@ Examples
 	440
 
 	Prelude>10 / 4
-	2.5```
+	2.5
 
 #### Associativity and precedence
 
@@ -169,14 +169,14 @@ Examples
 
 Operator  Name  Purpose / application
 
-```+		plus		addition
++		plus		addition
 -   	minus		subtraction
 *		asterisk	multiplication
 /		slash		fractional division
 div		divide		integral division, round down
 mod		modulo		similar to 'rem' but after modular division
 quot	quotient		integral division, round towards zero
-rem		remainder	remainder after division```
+rem		remainder	remainder after division
 
 #### Negative numbers
 
@@ -197,16 +197,16 @@ rem		remainder	remainder after division```
 * In the specific case of -, the syntax sugar means the operator now has two possible interpretations, subtractions or a negative number
 * The following are semantically identical (they have the same meaning, despite the different syntax) because the - is translated into negate
 
-	```Prelude> 2000 + (-1234)
+	Prelude> 2000 + (-1234)
 	766
 
 	Prelude> 2000 + (negate 1234)
-	766```
+	766
 
 * Whereas this is case of - being used for subtraction
 
-	```Prelude> 2000 - 1234
-	766```
+	Prelude> 2000 - 1234
+	766
 
 #### Parenthesising infix functions
 
@@ -226,15 +226,15 @@ rem		remainder	remainder after division```
 
 * Subtractions is a special case as these will work
 
-	```Prelude> 2 - 1
+	Prelude> 2 - 1
 	1
 
 	Prelude> (-) 2 1
-	1```
+	1
 
 * However this won't work as enclosing a value inside of parentheses with the - indicates to GHCi that it's the argument of a function
 
-	```Prelude> (-2) 1```
+	Prelude> (-2) 1
 
 * You can use sectioning for subtraction but it must be the first argument
 
@@ -256,11 +256,11 @@ Haskell uses a non-strict evaluation, sometimes called "lazy evaluation", strate
 
 	Examples
 	
-	```printInc n = print plusTwo
+	printInc n = print plusTwo
 		where plusTwo = n + 2
 
 	printInc2 n = let plusTwo = n + 2
-				  in print plusTwo```
+				  in print plusTwo
 
 #### The lambdas beneath let expressions
 
@@ -269,11 +269,11 @@ Haskell uses a non-strict evaluation, sometimes called "lazy evaluation", strate
 
 	Examples
 
-	```(\x -> x) 0 evaluates to 0
+	(\x -> x) 0 evaluates to 0
 
 	(\x -> x) 1 evaluates to 1
 
-	(\x -> x) "blah" evaluates to "blah"```
+	(\x -> x) "blah" evaluates to "blah"
 
 #### Parenthesisation
 
