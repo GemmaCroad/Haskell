@@ -74,13 +74,13 @@
 * Calling a function by name and introducing a value for the argument makes a function a reducible expression
 * In a pure functional language like Haskell, applications of functions can be replaced with their definitions and the outcome would be the same result still
 
-Example
+	Example
 
-	triple 2
-	(triple x = x * 3) 2
-	(triple 2 = 2 * 3)
-	2 * 3
-	6
+		triple 2
+		(triple x = x * 3) 2
+		(triple 2 = 2 * 3)
+		2 * 3
+		6
 
 #### Conventions for variables
 
@@ -94,22 +94,22 @@ Example
 * Operators are functions which can be us in infix style
 * All operators are functions; not all functions are operators
 
-Examples
+	Examples
 
-	Prelude> 100 + 100
-	200
+		Prelude> 100 + 100
+		200
 
-	Prelude> 768395 * 21356345
-	16410108716275
+		Prelude> 768395 * 21356345
+		16410108716275
 
-	Prelude> 123123 / 123
-	1001.0
+		Prelude> 123123 / 123
+		1001.0
 
-	Prelude>476 - 36
-	440
+		Prelude>476 - 36
+		440
 
-	Prelude>10 / 4
-	2.5
+		Prelude>10 / 4
+		2.5
 
 #### Associativity and precedence
 
@@ -131,7 +131,7 @@ Examples
 	[2] 7 is the precedence, higher is applied first, on a scale of 0-9
 
 	[3] Infix function name, in this case multiplication
-	
+
 	[4] The comma is here to assign left-associativity and precedence 6 for two functions (+) and (-)
 
 		-- this
@@ -261,11 +261,11 @@ Haskell uses a non-strict evaluation, sometimes called "lazy evaluation", strate
 
 	Examples
 	
-	```printInc n = print plusTwo
-		where plusTwo = n + 2```
+		printInc n = print plusTwo
+			where plusTwo = n + 2
 
-	```printInc2 n = let plusTwo = n + 2
-				  in print plusTwo```
+		printInc2 n = let plusTwo = n + 2
+					  in print plusTwo
 
 #### The lambdas beneath let expressions
 
@@ -274,11 +274,11 @@ Haskell uses a non-strict evaluation, sometimes called "lazy evaluation", strate
 
 	Examples
 
-	```(\x -> x) 0 evaluates to 0```
+		(\x -> x) 0 evaluates to 0
 
-	```(\x -> x) 1 evaluates to 1```
+		(\x -> x) 1 evaluates to 1
 
-	```(\x -> x) "blah" evaluates to "blah"```
+		(\x -> x) "blah" evaluates to "blah"
 
 #### Parenthesisation
 
