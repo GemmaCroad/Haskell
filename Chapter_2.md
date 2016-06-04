@@ -118,25 +118,25 @@ Examples
 
 	Examples
 
-	:info (*)
-	infixl   7   *
-	--  [1] [2] [3]
+		:info (*)
+		infixl   7   *
+		--  [1] [2] [3]
 
-	:info (+) (-)
-	infixl   6   +, -
-	--			  [4]
+		:info (+) (-)
+		infixl   6   +, -
+		--			  [4]
 
 	[1] Infixl means infix operator, left associative
 	[2] 7 is the precedence, higher is applied first, on a scale of 0-9
 	[3] Infix function name, in this case multiplication
 	[4] The comma is here to assign left-associativity and precedence 6 for two functions (+) and (-)
 
-	-- this
-	2 * 3 * 4
+		-- this
+		2 * 3 * 4
 
-	-- is evaluates as if it was
-	(2 * 3) * 4
-	-- Because of left-associativity from infixl
+		-- is evaluates as if it was
+		(2 * 3) * 4
+		-- Because of left-associativity from infixl
 
 	Here is an example of a right-associative infix operator 
 
@@ -167,16 +167,16 @@ Examples
 
 #### Arithmetic functions in Haskell
 
-Operator  Name  Purpose / application
-
-`+		plus		addition`
-`-   	minus		subtraction`
-`*		asterisk	multiplication`
-`/		slash		fractional division`
-`div	divide		integral division, round down`
-`mod	modulo		similar to 'rem' but after modular division`
-`quot	quotient	integral division, round towards zero`
-`rem	remainder	remainder after division`
+Operator | Name | Purpose / application
+--- | --- | ---
++ | plus | addition
+-  | minus | subtraction
+* | asterisk | multiplication
+/ | slash | fractional division
+div | divide | integral division, round down
+mod	| modulo | similar to 'rem' but after modular division
+quot | quotient	| integral division, round towards zero
+rem	| remainder	| remainder after division
 
 #### Negative numbers
 
