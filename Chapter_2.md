@@ -127,8 +127,11 @@ Examples
 		--			  [4]
 
 	[1] Infixl means infix operator, left associative
+
 	[2] 7 is the precedence, higher is applied first, on a scale of 0-9
+
 	[3] Infix function name, in this case multiplication
+	
 	[4] The comma is here to assign left-associativity and precedence 6 for two functions (+) and (-)
 
 		-- this
@@ -145,7 +148,9 @@ Examples
 		-- [1]  [2] [3]
  
 	[1] Infixr means infix operator, right associative
+
 	[2] 8 is the precedence, higher precedence is applied first
+
 	[3] Infix function name, in this case exponentiation
 
 
