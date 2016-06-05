@@ -16,11 +16,11 @@
 
 	Example
 
-	Prelude> :type 'a'
-	'a' :: Char
+		Prelude> :type 'a'
+		'a' :: Char
 
-	Prelude> :type "Hello!"
-	"Hello!" :: [Char]
+		Prelude> :type "Hello!"
+		"Hello!" :: [Char]
 
 #### Printing simple strings
 
@@ -35,7 +35,7 @@
 		hello world!Prelude>
 
 * Can also print from source files
-* IO () - stands for input / output
+* IO ( ) - stands for input / output
 * A special type used by Haskell when the results of a running program involve side-effects as opposed to being a pure function or expression e.g. printing
 
 #### String concatenation
@@ -75,7 +75,9 @@ where and let clauses in Haskell introduce local bindings or declarations
 
 
 	[1] Take an argument of type [a], which is a list of elements whose type we don't know yet
+
 	[2] Take another argument of type [a], a list of elements who type we don't know - because these variables are the same, they must be the same type though (a == a)
+
 	[3] Return a result of type [a]
 
 #### Concatenation and scoping
