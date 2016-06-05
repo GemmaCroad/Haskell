@@ -81,6 +81,7 @@
 * We can describe this relationship by saying that num is a superclass of fractional
 
 #### Comparing values
+
 * '==' is equal to
 * '<' less than
 * '>' greater than
@@ -114,7 +115,7 @@
 * You can only compare list items where the items themselves also have an instance of ord
 * A datatype that has not instance of ord will not work
 
-## if-then-else
+#### if-then-else
 
 * Haskell doesn't have 'if' statements but it does have if expressions
 * It's a built in bit of syntax that works with the bool datatype
@@ -152,7 +153,7 @@
 
 		"AWESOME"
 
-## Tuples
+#### Tuples
 
 * The tuple is Haskell is a type that allows you to store and pass around multiple values within a single value
 * Tuples have a distinctive built-in syntax that is used at both type and term levels
@@ -169,7 +170,7 @@
 * The variables can be polymorphic so variables a and b can be different types (integer, string) or (integer, integer)
 * It's generally unwise to use tuples of an overly large size, most should be 5-tuple of smaller
 
-## Lists
+#### Lists
 
 * Lists in Haskell are another type used to contain multiple values within a single value
 * All constituents of a list must be of the same type
