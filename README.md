@@ -13,3 +13,5 @@ I am a junior front-end developer with no prior functional programming experienc
 [Chapter 4 - Basic datatype](https://github.com/GemmaStiles/Haskell/blob/master/Chapter_4.md)
 
 [Chapter 5 - Types](https://github.com/GemmaStiles/Haskell/blob/master/Chapter_5.md)
+
+[Chapter 6 - Typeclasses](https://github.com/GemmaStiles/Haskell/blob/master/Chapter_6.md)
