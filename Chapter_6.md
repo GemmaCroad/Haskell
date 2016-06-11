@@ -331,10 +331,10 @@ There is also a function show which takes a polymorphic a and returns it as a st
 	* A String value can be ANY text
 	* That's way too big of a type or things we want to parse into numbers
 
-		Prelude> read "1234567" :: Integer
-		1234567
-		Prelude> read "BLAH" :: Integer
-		*** Exception: Prelude.read: no parse
+			Prelude> read "1234567" :: Integer
+			1234567
+			Prelude> read "BLAH" :: Integer
+			*** Exception: Prelude.read: no parse
 
 * This error means that read is a partial function
 	* A function that doesn't return a proper value as a result for all possible inputs
