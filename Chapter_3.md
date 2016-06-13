@@ -1,4 +1,4 @@
-## Chapter 3 - Types
+## Chapter 3 - Strings
 
 
 #### A first look at types
