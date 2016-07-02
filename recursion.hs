@@ -15,3 +15,19 @@ mc91 x
     | otherwise = mc91 . mc91 $ x + 11
 
 mc91result min max = map mc91 [min..max]
+
+
+--Custom version of the maximum function
+maximum' :: (Ord a) => [a] -> a
+maximum' [] = error "maximum of an empty lists!"
+maximum' [x] = x
+maximum' (x:xs) = max x (maximum' xs)
+
+
+--Custom version of the replicate function
+replicate' :: Int -> a -> [a]
+replicate' n x
+	| n <= 0 = []
+	| otherwise = x : replicate' (n-1) x
+
+
